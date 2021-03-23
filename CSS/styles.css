@@ -356,7 +356,7 @@ html,body
   }
 
   .Asilbek,.Joe,.Aum{
-    background-image: url("/resource/images/Screenshot_20210323-061009.jpg");
+    background-image: url("../resource/images/Screenshot_20210323-061009.jpg");
     min-width: 100%;
     min-height: 100%;
     background-position: center;
@@ -367,10 +367,10 @@ html,body
   }
 
   .Joe{
-    background-image: url("/resource/images/Snapchat-1487762016.jpg");
+    background-image: url("../resource/images/Snapchat-1487762016.jpg");
   }
   .Aum{
-    background-image: url("/resource/images/Snapchat-519677337.jpg");
+    background-image: url("../resource/images/Snapchat-519677337.jpg");
   }
 
 
