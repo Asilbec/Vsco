@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Narrow', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    min-width: 300px;
+    background-color:rgb(219, 219, 219);
+
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 360px) {
+   #top__Image {
+    background-attachment: scroll;
+  }
+}
+
+.navbar {
+  background: #161616;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border: 2px solid rgb(255, 255, 255);
+  border-top: 0px;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 -70px;
+  position: absolute;
+}
+
+#navbar__logo {
+  background-color: #ffffff;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  text-decoration: none;
+  height: 100%;
+  transition: all .05s ease;
+}
+
+.navbar__links:hover {
+  color: #ffffff;
+  transition: all 0.05s ease;
+  text-decoration: underline;
+  font-size: 105%;
+
+}
+
+@media screen and (max-width: 960px) {
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+
+  .navbar__menu.active {
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: 99;
+    height: 42vh;
+    font-size: 1.6rem;
+  }
+
+  #navbar__logo {
+    padding-left: 25px;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.1s ease-in-out;
+    background: #fff;
+  }
+
+  .navbar__item {
+    width: 100%;
+  }
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    font-size: 100%;
+  }
+
+  .navbar__btn {
+    padding-bottom: 2rem;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .upArrow {
+   transform: rotate(180deg);
+   position: relative;
+   width: 40px;
+   height: 40px;
+   top: -10%;
+   left: 65px;
+  }
+}
+
+
+/* STarts the first section*/
+  #breaker{
+    background-size: cover;
+    height: 7vmin;
+    width: 100%;
+    margin: auto;
+   
+  }
+
+  #top__Image {
+
+    background-image: url("https://wallpapercave.com/wp/wp4500934.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: -20px;
+    margin: auto;
+
+
+  }  
+
+  #middle_Image {
+
+    background-image: url("https://wallpapercave.com/wp/wp5527449.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: -30px;
+    margin: auto;
+
+  }  
+
+
+
+  #bottom_Image {
+
+    background-image: url("https://wallpaperaccess.com/full/1088807.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 30px;
+    margin: auto;
+
+  }  
+
+
+  .introduction{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 1300px;
+    height: 80%;
+  }
+
+  .introduction__Title{
+    font-size: 10vw;
+    color: rgb(0, 0, 0, 0.945);
+    text-decoration: underline;
+    font-style: oblique;
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: 1550px) {
+    .introduction__Title,.Team {
+       font-size: 150px;
+    }
+
+  }
+
+  .introduction__Text{
+    font-size: min(3vh,40px);
+    text-align: left;
+    color: rgb(219, 219, 219);
+    
+
+  }
+
+  .introduction__Container{
+    background-color: rgba(0, 0, 0, 0.945);
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    height: fit-content;
+    
+
+  }
+
+  .social__Media{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+
+  }
+  #instagram{
+    width: 10vh;
+    height: 10vh;
+    background-size: cover;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/picons-social/57/78-instagram-512.png");
+    display: flex;
+    margin-right: 2vw;
+    box-shadow: 5px 10px #888888;
+  }
+
+
+  #github{
+    width: 10vh;
+    height: 10vh;
+    background-size: cover;
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/part+1+github-1320568339880199515.png");
+    display: flex;
+    float: right;
+    margin-right: 2vw;
+    box-shadow: 5px 10px #888888;
+  }
+
+  #personalWebsite{
+    width: 10vh;
+    height: 10vh;
+    background-size: cover;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/social-media-solid-2/32/Website-512.png");
+    display: flex;
+    box-shadow: 5px 10px #888888;
+  }
+
+  .Team{
+    margin-top: 10vw;
+    font-size: 9vh;
+    width: 100%;
+    max-width: 1600px;
+
+  }
+
+  .TeamContainer{
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 30px;
+    justify-content: center;
+    grid-row-gap: 50px;
+  }
+  .TeamContainer h1{
+    font-size: 5vh;
+  }
+
+  #person{
+    min-width: 320px;
+    min-height: 360px;
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    background-color: rgb(192, 192, 192);
+  }
+
+  .Asilbek,.Joe,.Aum{
+    background-image: url("/resource/images/Screenshot_20210323-061009.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-bottom: 30px;
+    margin: auto;
+  }
+
+  .Joe{
+    background-image: url("/resource/images/Snapchat-1487762016.jpg");
+  }
+  .Aum{
+    background-image: url("/resource/images/Snapchat-519677337.jpg");
+  }
+
+
+
+
+
+
+
+
+
+
+/* total width */
+body::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0.877);
+  width: 5px;
+
+}
+
+/* background of the scrollbar except button or resizer */
+body::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+/* scrollbar itself */
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+/* set button(top and bottom of the scrollbar) */
+body::-webkit-scrollbar-button {
+  display:none;
+}
+@media screen and (orientation: landscape) {
+  head {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
